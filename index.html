@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>power</title>
+    <link rel="stylesheet" href="./css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="head"></h1>
+        <button onclick="lighton()">Turn ON Light</button>
+        
+        <img  alt="light off" id="img">
+
+        <button onclick="lightof()">Turn OFF Light</button>
+    </div>
+  <script>
+    const lighton=()=>{
+        document.getElementById('img').src='./img/light-bulb_on.png'
+
+        document.getElementById('head').innerText='Can You Turn The Light OFF?'
+        
+    }
+    const lightof=()=>{
+        document.getElementById('img').src='./img/light-bulb.png'
+        
+        document.getElementById('head').innerText='Can You Turn The Light ON?'
+        
+    }
+    lightof()
+  </script>
+    
+</body>
+</html>
